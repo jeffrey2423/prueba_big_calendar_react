@@ -21,6 +21,6 @@ app.use(express.json());
 //especificamos las urls que la aplicacion de react
 //podra acceder
 app.use('/api/calendar', require('./routes/calendar'));
-//app.use('/api/notes', require('./routes/notes'));
+app.use('/api/users/auth', require('./routes/auth'));
 
 module.exports = app;
